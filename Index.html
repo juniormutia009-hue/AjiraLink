@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AjiraLink Kenya | Find Your Opportunity</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #243047;
+      background: #f5f7fb;
+    }
+
+    header {
+      background: #102a43;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #42d6a4;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #42d6a4;
+    }
+
+    .hero {
+      background: #174c72;
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 46px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 10px;
+      max-width: 750px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccd5df;
+      border-radius: 6px;
+      font: inherit;
+    }
+
+    .search-box input {
+      flex: 2;
+      min-width: 180px;
+    }
+
+    .search-box select {
+      flex: 1;
+      min-width: 150px;
+    }
+
+    button, .btn {
+      background: #087f5b;
+      color: white;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    button:hover, .btn:hover {
+      background: #066548;
+    }
+
+    .container {
+      width: 86%;
+      max-width: 1150px;
+      margin: 40px auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .section-title h2 {
+      color: #102a43;
+      font-size: 29px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .category {
+      background: white;
+      padding: 22px 12px;
+      border-radius: 9px;
+      text-align: center;
+      box-shadow: 0 2px 8px #102a4310;
+      cursor: pointer;
+      border: 1px solid #e1e7ef;
+    }
+
+    .category:hover {
+      border-color: #087f5b;
+      transform: translateY(-2px);
+    }
+
+    .category strong {
+      display: block;
+      color: #174c72;
+      margin-bottom: 5px;
+    }
+
+    .job-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .job-card {
+      background: white;
+      padding: 22px;
+      border-radius: 9px;
+      border: 1px solid #e1e7ef;
+      box-shadow: 0 3px 10px #102a4308;
+    }
+
+    .job-card h3 {
+      color: #174c72;
+      margin-bottom: 8px;
+    }
+
+    .job-card p {
+      margin-bottom: 8px;
+      overflow-wrap: anywhere;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0f7ed;
+      color: #087f5b;
+      padding: 4px 9px;
+      border-radius: 15px;
+      font-size: 12px;
+      margin: 7px 0 12px;
+    }
+
+    .about {
+      background: white;
+      padding: 30px;
+      border-radius: 9px;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: 10px auto;
+    }
+
+    .contact {
+      background: #e8f2f8;
+      padding: 30px;
+      border-radius: 9px;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 20px auto 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    footer {
+      background: #102a43;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 45px;
+    }
+
+    footer a {
+      color: #42d6a4;
+    }
+
+    .notice {
+      background: #fff3cd;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      color: #664d03;
+    }
+
+    .empty {
+      text-align: center;
+      padding: 25px;
+      grid-column: 1 / -1;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      .hero {
+        padding: 45px 15px;
+      }
+
+      .container {
+        width: 92%;
+      }
+    }
+  </style>
+</head>
